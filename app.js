@@ -8,6 +8,7 @@ const cart = document.querySelector(".cart")
 
 addToCart.addEventListener("click", ()=>{
     cart.classList.toggle("cartClear")
+    
 })
 
 const productsArray = JSON.parse(localStorage.getItem("category")) || [];

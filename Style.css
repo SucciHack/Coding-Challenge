@@ -27,7 +27,7 @@ nav .search {
   justify-content: space-between;
 }
 nav input {
-  width: 80%;
+  width: 100%;
   background: transparent;
 }
 @media (max-width: 480px) {
@@ -153,16 +153,14 @@ button {
   align-items: center;
   background-color: rgb(23, 141, 102);
   border-bottom-left-radius: 50% 30px;
-  border-bottom-right-radius: 50% 30px;
-  border-radius: 20px;
-  overflow: hidden;
+  border-bottom-right-radius: 50% 60px;
 }
 .hero .one {
   margin: 3rem 3rem;
 }
 .hero .one h1 {
-  width: 80%;
-  font-size: 4rem;
+  width: 90%;
+  font-size: 2.3rem;
   color: white;
   text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
@@ -179,6 +177,7 @@ button {
   min-height: 40vh;
   position: relative;
   margin-top: 1rem;
+  padding: 2rem 0;
 }
 .categories .cards {
   display: grid;
@@ -227,9 +226,6 @@ form input {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   height: 40vh;
-}
-.productSection .cardP img {
-  width: 100%;
 }
 .productSection .cardP .qyt {
   font-size: small;
