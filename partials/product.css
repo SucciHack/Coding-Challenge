@@ -3,6 +3,9 @@
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   height: 40vh;
 }
+.productSection .cardP {
+  background-color: #fff;
+}
 .productSection .cardP .qyt {
   font-size: small;
 }
