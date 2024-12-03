@@ -1,0 +1,43 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: rgb(23, 141, 102);
+    color: white;
+    margin-bottom: 1rem;
+    margin: .5rem;
+    // margin: 1rem;
+    // border-radius: 30px;
+
+    & span{
+        color: orange;
+        margin-right: 5px;
+    }
+    .search{
+        background-color: white;
+        padding: .5rem 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    input{
+        width: 80%;
+        background: transparent;
+    }
+    @media (max-width:480px){
+           nav{
+            display: flex;
+            justify-content: space-between;
+           }
+           a{
+            display: none;
+           }
+           input{
+            width: 50px;
+           }
+           .user{
+            display: none;
+           }
+    }
+}

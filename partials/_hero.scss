@@ -1,0 +1,28 @@
+.hero{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(23, 141, 102) ;
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 68%, 76% 81%, 42% 85%, 0 79%, 0% 50%);
+    border-radius: 20px;
+    overflow: hidden;
+
+    .one{
+        margin:3rem 3rem;
+        h1{
+            width: 80%;
+            font-size: 4rem;
+        }
+        p{
+            width: 50%;
+            font-size: 16px;
+        }
+    }
+    .two{
+        & img{
+            width: 500px;
+        }
+    }
+}

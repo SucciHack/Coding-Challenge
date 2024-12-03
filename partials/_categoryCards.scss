@@ -1,0 +1,12 @@
+.categories{
+    height: 40vh;
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        place-items: center;
+    }
+    button{
+        width: 15%;
+        margin: 10px auto;
+    }
+}

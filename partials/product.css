@@ -1,0 +1,7 @@
+.productSection .pCard {
+  display: flex;
+  flex-direction: column;
+}
+.productSection .pCard p {
+  text-align: center;
+}/*# sourceMappingURL=product.css.map */
