@@ -12,6 +12,10 @@ addToCart.addEventListener("click", ()=>{
 
 const productsArray = JSON.parse(localStorage.getItem("category")) || [];
 
+addCategory.addEventListener("click", () => {
+    form.classList.toggle("visible");
+});
+
 submitBtn.addEventListener("click", () => {
     // event.preventDefault();
     const categoryInput = document.getElementById("categoryInput");
