@@ -1,16 +1,19 @@
-const addToCart = document.getElementById("addToCart");
+const addCategory = document.getElementById("addCategory");
 const form = document.getElementById("form");
 const submitBtn = document.getElementById("submit");
 const categorySection = document.querySelector(".cards");
 
+const addToCart = document.getElementById("addToCart")
+const cart = document.querySelector(".cart")
+
+addToCart.addEventListener("click", ()=>{
+    cart.classList.toggle("cartClear")
+})
+
 const productsArray = JSON.parse(localStorage.getItem("category")) || [];
 
-addToCart.addEventListener("click", () => {
-    form.classList.toggle("visible");
-});
-
-submitBtn.addEventListener("click", (event) => {
-    event.preventDefault();
+submitBtn.addEventListener("click", () => {
+    // event.preventDefault();
     const categoryInput = document.getElementById("categoryInput");
     const categoryImage = document.getElementById("categoryImage");
 

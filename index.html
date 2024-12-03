@@ -10,25 +10,29 @@
 <body>
     <nav>
         <a href="#"><i class="fa-solid fa-bars"></i></a>
-        <a href="#"><i class="fa-solid fa-carrot"></i> <span>Gromuse</span></a>
+        <span><img src="./images/logo.png" alt="" width="80px">
+            <p>Gromuse</p></span>
         <div class="search">
             <input type="search" placeholder="Search for Grocery,Stores,Vegetables or Meat " >
             <span class="fa-solid fa-magnifying-glass"></span>
         </div>
-        <a href="#"><span><i class="fa-solid fa-bolt"></i></span></i>Order now and get it within 15 mint</a>
+        <span>
+            <i class="fa-solid fa-bolt"></i>
+            <p>Order now and get it within 15 mint</p>
+        </span>
         <p href="" id="addToCart"><i class="fa-solid fa-cart-shopping"></i></p>
         <p class="user"><i class="fa-solid fa-user"></i></p>
+
+        <div class="cart">
+            <h1>CartItems</h1>
+            <p>You Currently don't have items in Cart</p>
+            <div class="cardP">
+                <img src="./images/bread.png" alt="" width="200px">
+                .cartContent
+                <!-- <button>viewProduct</button> -->
+            </div>
+        </div>
     </nav>
-    <form action="" id="form">
-        <label for="categoryInput">Enter an Id</label>
-        <input type="text" placeholder="Enter productId" id="categoryInput" required>
-
-        <label for="categoryImage">Enter an Id</label>
-        <input type="text" placeholder="Enter productId" id="categoryImage" required>
-
-        <button id="submit">Submit</button>
-    </form>
-
 
     <section class="categorySection">
         <div class="hero">
@@ -42,40 +46,20 @@
             </div>
         </div>
     </section>
+    <form action="" id="form">
+        <label for="categoryInput">Enter an Id</label>
+        <input type="text" placeholder="Enter productId" id="categoryInput" required>
+
+        <label for="categoryImage">Enter an Id</label>
+        <input type="text" placeholder="Enter productId" id="categoryImage" required>
+
+        <button id="submit">Submit</button>
+    </form>
 
 
     <section class="categories">
-        <div class="cards">
-            <!-- <div class="card">
-                <h2>Vegetable</h2>
-                <p>Local Market</p>
-                <div class="img">
-                    <img src="./images/fruit.png" alt="">
-                </div>
-            </div> -->
-            <!-- <div class="card">
-                <h2>Vegetable</h2>
-                <p>Local Market</p>
-                <div class="img">
-                    <img src="./images/chicken.png" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <h2>Vegetable</h2>
-                <p>Local Market</p>
-                <div class="img">
-                    <img src="./images/bread.png" alt="">
-                </div>
-            </div>
-            <div class="card">
-                <h2>Vegetable</h2>
-                <p>Local Market</p>
-                <div class="img">
-                    <img src="./images/broccoli.png" alt="">
-                </div>
-            </div> -->
-        </div>
-        <button>Add Category</button>
+        <div class="cards"></div>
+        <button id="addCategory">Add Category</button>
     </section>
 
 

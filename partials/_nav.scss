@@ -11,10 +11,15 @@ nav{
     margin: .5rem;
     // margin: 1rem;
     // border-radius: 30px;
+    position: relative;
 
     & span{
         color: orange;
         margin-right: 5px;
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        justify-content: center;
     }
     .search{
         background-color: white;
@@ -60,25 +65,29 @@ nav{
            }
     }
 }
-form{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.349);
+.cart{
+    padding: 5rem;
+    background-color: rgba(0, 0, 0, 0.507);
     backdrop-filter: blur(3px);
-    padding: 3rem;
+    width: 50%;
+    min-height: 30%;
     position: absolute;
-    right: 25%;
     top: 0;
-    z-index: 999;
+    // bottom: 0;
     color: white;
-    transform: translateY(-350px);
+    margin-bottom: .5rem;
+    transform: translateX(-850px);
     transition: .3s ease-in-out;
-    input{
-        padding: 1rem;
+
+    & h1{
+        font-size: 2rem;
+        border-bottom: 2px white solid;
+    }
+    .cardP{
+        display: flex;
+        align-items: center;
     }
 }
-.visible{
-    transform: translateY(0px);
+.cartClear{
+    transform: translateX(0);
 }

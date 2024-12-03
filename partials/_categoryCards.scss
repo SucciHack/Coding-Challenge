@@ -1,12 +1,45 @@
 .categories{
     min-height: 40vh;
+    position: relative;
+    margin-top: 1rem;
     .cards{
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
         place-items: center;
     }
+
     button{
         width: 15%;
         margin: 10px auto;
     }
+    .img{
+        width: 200px;
+        & img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.349);
+    backdrop-filter: blur(3px);
+    padding: 3rem;
+    position: absolute;
+    right: 25%;
+    // top: 0;
+    z-index: 999;
+    color: white;
+    transform: translateY(-800px);
+    transition: .3s ease-in-out;
+    input{
+        padding: 1rem;
+    }
+}
+.visible{
+    transform: translateY(600px);
 }

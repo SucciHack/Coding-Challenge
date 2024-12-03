@@ -10,10 +10,15 @@ nav {
   color: white;
   margin-bottom: 1rem;
   margin: 0.5rem;
+  position: relative;
 }
 nav span {
   color: orange;
   margin-right: 5px;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
 }
 nav .search {
   background-color: white;
@@ -59,29 +64,31 @@ nav input {
   }
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-  margin: 0 auto;
-  background-color: rgba(0, 0, 0, 0.349);
+.cart {
+  padding: 5rem;
+  background-color: rgba(0, 0, 0, 0.507);
   -webkit-backdrop-filter: blur(3px);
           backdrop-filter: blur(3px);
-  padding: 3rem;
+  width: 50%;
+  min-height: 30%;
   position: absolute;
-  right: 25%;
   top: 0;
-  z-index: 999;
   color: white;
-  transform: translateY(-350px);
+  margin-bottom: 0.5rem;
+  transform: translateX(-850px);
   transition: 0.3s ease-in-out;
 }
-form input {
-  padding: 1rem;
+.cart h1 {
+  font-size: 2rem;
+  border-bottom: 2px white solid;
+}
+.cart .cardP {
+  display: flex;
+  align-items: center;
 }
 
-.visible {
-  transform: translateY(0px);
+.cartClear {
+  transform: translateX(0);
 }
 
 a {
@@ -138,6 +145,7 @@ button {
 }
 
 .hero {
+  min-height: 60vh;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -155,17 +163,22 @@ button {
 .hero .one h1 {
   width: 80%;
   font-size: 4rem;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 .hero .one p {
   width: 50%;
   font-size: 16px;
+  color: white;
 }
 .hero .two img {
-  width: 500px;
+  width: 350px;
 }
 
 .categories {
   min-height: 40vh;
+  position: relative;
+  margin-top: 1rem;
 }
 .categories .cards {
   display: grid;
@@ -175,6 +188,39 @@ button {
 .categories button {
   width: 15%;
   margin: 10px auto;
+}
+.categories .img {
+  width: 200px;
+}
+.categories .img img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.349);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding: 3rem;
+  position: absolute;
+  right: 25%;
+  z-index: 999;
+  color: white;
+  transform: translateY(-800px);
+  transition: 0.3s ease-in-out;
+}
+form input {
+  padding: 1rem;
+}
+
+.visible {
+  transform: translateY(600px);
 }
 
 .productSection {
@@ -206,5 +252,4 @@ body {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  position: relative;
 }/*# sourceMappingURL=Style.css.map */

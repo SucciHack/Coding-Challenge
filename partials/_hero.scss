@@ -1,4 +1,5 @@
 .hero{
+    min-height: 60vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -15,15 +16,18 @@ border-bottom-right-radius: 50% 30px;
         h1{
             width: 80%;
             font-size: 4rem;
+            color: white;
+            text-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
         p{
             width: 50%;
             font-size: 16px;
+            color: white;
         }
     }
     .two{
         & img{
-            width: 500px;
+            width: 350px;
         }
     }
 
