@@ -3,7 +3,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
+  font-size: 1rem;
   border-radius: 20px;
   background-color: rgb(23, 141, 102);
   color: white;
@@ -38,6 +39,49 @@ nav input {
   nav .user {
     display: none;
   }
+  nav #addToCart {
+    font-size: 2rem;
+  }
+}
+@media (max-width: 769px) {
+  nav nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  nav a {
+    display: none;
+  }
+  nav input {
+    width: 100%;
+  }
+  nav .user {
+    display: none;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.349);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  padding: 3rem;
+  position: absolute;
+  right: 25%;
+  top: 0;
+  z-index: 999;
+  color: white;
+  transform: translateY(-350px);
+  transition: 0.3s ease-in-out;
+}
+form input {
+  padding: 1rem;
+}
+
+.visible {
+  transform: translateY(0px);
 }
 
 a {
@@ -100,8 +144,8 @@ button {
   justify-content: space-between;
   align-items: center;
   background-color: rgb(23, 141, 102);
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 68%, 76% 81%, 42% 85%, 0 79%, 0% 50%);
-          clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 68%, 76% 81%, 42% 85%, 0 79%, 0% 50%);
+  border-bottom-left-radius: 50% 30px;
+  border-bottom-right-radius: 50% 30px;
   border-radius: 20px;
   overflow: hidden;
 }
@@ -121,7 +165,7 @@ button {
 }
 
 .categories {
-  height: 40vh;
+  min-height: 40vh;
 }
 .categories .cards {
   display: grid;
@@ -134,16 +178,18 @@ button {
 }
 
 .productSection {
-  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 40vh;
 }
-.productSection .pCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.productSection .cardP img {
+  width: 100%;
 }
-.productSection .pCard p {
-  text-align: center;
+.productSection .cardP .qyt {
+  font-size: small;
+}
+.productSection .cardP button {
+  padding: 1rem 2rem;
 }
 
 * {
@@ -154,8 +200,11 @@ button {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   background-color: aliceblue;
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }/*# sourceMappingURL=Style.css.map */

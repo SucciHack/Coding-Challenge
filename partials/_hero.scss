@@ -5,7 +5,8 @@
     justify-content: space-between;
     align-items: center;
     background-color:rgb(23, 141, 102) ;
-    clip-path: polygon(0 0, 100% 0, 100% 20%, 100% 68%, 76% 81%, 42% 85%, 0 79%, 0% 50%);
+    border-bottom-left-radius: 50% 30px;
+border-bottom-right-radius: 50% 30px;
     border-radius: 20px;
     overflow: hidden;
 
@@ -25,4 +26,5 @@
             width: 500px;
         }
     }
+
 }

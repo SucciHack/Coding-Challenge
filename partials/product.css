@@ -1,7 +1,14 @@
-.productSection .pCard {
-  display: flex;
-  flex-direction: column;
+.productSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  height: 40vh;
 }
-.productSection .pCard p {
-  text-align: center;
+.productSection .cardP img {
+  width: 100%;
+}
+.productSection .cardP .qyt {
+  font-size: small;
+}
+.productSection .cardP button {
+  padding: 1rem 2rem;
 }/*# sourceMappingURL=product.css.map */

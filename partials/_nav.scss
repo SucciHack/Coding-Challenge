@@ -2,7 +2,8 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    padding: 1.5rem;
+    font-size: 1rem;
     border-radius: 20px;
     background-color: rgb(23, 141, 102);
     color: white;
@@ -39,5 +40,45 @@ nav{
            .user{
             display: none;
            }
+           #addToCart{
+            font-size: 2rem;
+           }
     }
+    @media (max-width:769px) {
+        nav{
+            display: flex;
+            justify-content: space-between;
+           }
+           a{
+            display: none;
+           }
+           input{
+            width: 100%;
+           }
+           .user{
+            display: none;
+           }
+    }
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.349);
+    backdrop-filter: blur(3px);
+    padding: 3rem;
+    position: absolute;
+    right: 25%;
+    top: 0;
+    z-index: 999;
+    color: white;
+    transform: translateY(-350px);
+    transition: .3s ease-in-out;
+    input{
+        padding: 1rem;
+    }
+}
+.visible{
+    transform: translateY(0px);
 }
