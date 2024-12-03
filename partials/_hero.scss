@@ -24,6 +24,9 @@
         }
     }
     .two{
+    filter: drop-shadow(10px 10px 10px rgba(120, 248, 60, 0.5));
+    width: 300px; /* Adjust as needed */
+    height: auto;
         & img{
             width: 350px;
         }
