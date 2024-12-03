@@ -77,6 +77,7 @@ nav input {
   margin-bottom: 0.5rem;
   transform: translateX(-850px);
   transition: 0.3s ease-in-out;
+  border-radius: 30px;
 }
 .cart h1 {
   font-size: 2rem;
